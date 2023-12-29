@@ -1,0 +1,110 @@
+.container-contact-page {
+    width: 60%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    // position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 120px auto 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.contact-title{
+    color: #e6f1ff;
+    font-size: 40px;
+    line-height: 60px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+}
+
+.paragraph {
+    color: #a8b2d1;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    font-family: sans-serif;
+    animation: fadeIn 1s 1.8s backwards;
+}
+
+
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #112240;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #112240;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+  
+    .flat-button {
+      color:  #64ffda;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 12px;
+      border: 1px solid  #64ffda;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 2px;
+    }
+  }
+ 
